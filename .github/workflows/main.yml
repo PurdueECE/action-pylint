@@ -3,13 +3,9 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version:
-        - 'pylint-3.9' # latest version that supports Python 3.9
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-python@v2
       with:
-        python-version: ${{ matrix.python-version }}
+        python-version: '3.9.x'
     - run: pylint . # lint the current directory
