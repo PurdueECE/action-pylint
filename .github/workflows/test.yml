@@ -1,0 +1,12 @@
+name: Test
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - name: Self test
+        id: selftest
+        uses: PurdueECE/action-pylint@main
+        with:
+          path: "test/data/valid"

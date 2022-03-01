@@ -1,0 +1,10 @@
+name: "action-pylint"
+description: "pylint GH Action"
+author: "Purdue ECE"
+inputs:
+  path:
+    description: "path to be linted"
+    default: "."
+runs:
+  using: "docker"
+  image: "Dockerfile"
