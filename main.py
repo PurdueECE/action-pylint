@@ -4,7 +4,8 @@ import pylint.lint
 
 
 def main():
-    pylint.lint.Run(os.environ["INPUT_PATH"])
+    path = os.environ["INPUT_PATH"]
+    pylint.lint.Run([path])
 
 if __name__ == "__main__":
     main()
