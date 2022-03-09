@@ -4,7 +4,7 @@ This action will run pylint in the specified directory.
 
 # Usage
 ```yaml
-- uses: PurdueECE/action-pylint@main
+- uses: PurdueECE/action-pylint@v1.2
   with:
     # Path to be linted
     # Default: .
