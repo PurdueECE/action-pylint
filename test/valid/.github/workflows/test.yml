@@ -8,4 +8,4 @@ jobs:
       - name: Self Test
         uses: ./
         with:
-          path: "test/data/valid"
+          path: "test/valid"
