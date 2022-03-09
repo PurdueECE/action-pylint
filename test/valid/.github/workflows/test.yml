@@ -1,11 +1,10 @@
-name: Local Test
+name: Valid Test
 on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
-      - name: Self Test (Valid)
-        uses: ./
+      - uses: ./
         with:
           path: "test/valid"

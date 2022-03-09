@@ -1,11 +1,10 @@
-name: Local Test
+name: Invalid Test
 on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
-      - name: Self Test (Invalid)
-        uses: ./
+      - uses: ./
         with:
           path: "test/invalid"
