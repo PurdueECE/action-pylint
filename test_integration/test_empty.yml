@@ -1,4 +1,4 @@
-name: Valid Test
+name: Empty Test
 on: [push]
 jobs:
   build:
@@ -7,4 +7,4 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ./
         with:
-          path: "test/valid"
+          path: "../test_data/empty"

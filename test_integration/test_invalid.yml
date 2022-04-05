@@ -7,4 +7,4 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ./
         with:
-          path: "test/invalid"
+          path: "../test_data/invalid"
