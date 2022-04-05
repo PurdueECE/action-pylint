@@ -8,6 +8,7 @@ from actions_toolkit import core
 
 def main():
     path = core.get_input('path')
+    core.info(f'Running pylint in: {path}')
     try:
         f = io.StringIO()
         with redirect_stdout(f):
