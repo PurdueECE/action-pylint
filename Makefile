@@ -1,7 +1,12 @@
+ACT = act
+
+test_empty:
+	$(ACT) -W test_integration/test_empty.yml
+
 test_valid:
-	act -W test/valid/.github/workflows
+	$(ACT) -W test_integration/test_valid.yml
 
 test_invalid:
-	act -W test/invalid/.github/workflows
+	$(ACT) -W test_integration/test_invalid.yml
 
-test: test_valid test_invalid
+test: test_empty test_valid test_invalid
