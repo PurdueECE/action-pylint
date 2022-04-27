@@ -6,9 +6,8 @@ This action will run pylint in the specified directory.
 ```yaml
 - uses: PurdueECE/action-pylint@v1.2
   with:
-    # Path to be linted
-    # Default: .
-    path: ''
+    # Args to send to pylint command
+    args: -v test_data/empty
 ```
 
 # Testing

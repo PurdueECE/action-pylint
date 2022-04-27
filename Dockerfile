@@ -1,8 +1,5 @@
-FROM python:3
+FROM cytopia/pylint:latest
 
-COPY requirements.txt /
-RUN pip install --no-cache-dir -r /requirements.txt
+COPY entrypoint.sh /entrypoint.sh
 
-COPY . /
-
-CMD [ "python3", "/main.py" ]
+ENTRYPOINT ["/entrypoint.sh"]

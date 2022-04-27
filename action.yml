@@ -2,9 +2,9 @@ name: "action-pylint"
 description: "pylint GH Action"
 author: "Purdue ECE"
 inputs:
-  path:
-    description: "path to be linted"
-    default: "."
+  args:
+    description: "Args to send to pylint command"
+    required: true
 runs:
   using: "docker"
   image: "Dockerfile"
